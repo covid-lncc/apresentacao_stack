@@ -1,0 +1,47 @@
+name: covid-presentation
+
+channels:
+  - https://conda.anaconda.org/conda-forge/
+
+dependencies:
+  # Compilers
+  - gxx_linux-64  # [linux]
+  
+  # Python
+  - python<3.7
+  - attrs==19.3.0
+  - ipython==7.13.0
+  - numba==0.48.0
+  - invoke==1.4.1
+  - pip
+
+  # Scientific stack
+  - numpy==1.18.1
+  - scipy==1.4.1
+  - pandas==1.0.3
+  - openpyxl==3.0.3
+  - pymc3==3.8
+  - mkl-service
+  - theano==1.0.4
+  - pip:
+    - SALib
+
+  # Notebooks
+  - jupyter==1.0.0
+  - notebook==6.0.3
+  - jupyter_contrib_nbextensions
+  - jupyter_nbextensions_configurator
+  - jupytext==1.4.1
+  - rise
+
+  # Plotting
+  - matplotlib==3.2.1
+  - altair==4.0.1
+
+  # Progress bar
+  - tqdm==4.44.0
+
+environment:
+  PYTHONPATH:
+    - {{ root }}
+  DATA_DIR: {{ root }}/data
