@@ -1,0 +1,33 @@
+# Python
+attrs==19.3.0
+ipython==7.13.0
+numba==0.48.0
+invoke==1.4.1
+pip
+graphviz
+pandoc
+
+# Scientific stack
+numpy==1.18.1
+scipy==1.4.1
+pandas==1.0.3
+openpyxl==3.0.3
+pymc3==3.8
+theano==1.0.4
+arviz<=0.11.0
+SALib
+
+# Notebooks
+jupyter==1.0.0
+notebook==6.0.3
+jupyter_contrib_nbextensions
+jupyter_nbextensions_configurator
+jupytext==1.4.1
+rise
+
+# Plotting
+matplotlib==3.2.1
+altair==4.0.1
+
+# Progress bar
+tqdm==4.44.0
